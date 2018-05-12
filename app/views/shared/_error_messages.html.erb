@@ -1,5 +1,6 @@
 <% if @post.errors.any? %>
   <div>
+    <span class="label label-warning">Warning</span>
     <p><%= pluralize(@post.errors.count, "error") %> prevented this post from saving.</p>
     <ul>
       <% @post.errors.full_messages.each do |msg| %>
